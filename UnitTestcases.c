@@ -30,10 +30,10 @@ void testCompSquares(int n, unsigned long long expResult)
 }
 int main() {
     // Test cases: 
-    printf("Add test case for boundary conditions\n");
     testCompSquares(1, 1);
     testCompSquares(2, 5);
     testCompSquares(3, 14);
     testCompSquares(4, 30);
+    testCompSquares(8888, -1);
     return 0;
 }
