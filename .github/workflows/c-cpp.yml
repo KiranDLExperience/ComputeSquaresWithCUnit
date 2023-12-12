@@ -1,11 +1,11 @@
 name: Unit Testcases
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  workflow_run:
+    workflows: 
+     - Build Code
+    types: 
+      - completed
 jobs:
   build:
 
