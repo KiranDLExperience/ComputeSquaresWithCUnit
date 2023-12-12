@@ -15,8 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -t ComputeSquares .
+      run: docker build -t computesquares .
     - name: Run tests
-      run: docker run ComputeSquare
+      run: docker run computesquares
     
 
