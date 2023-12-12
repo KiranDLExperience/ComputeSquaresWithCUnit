@@ -4,10 +4,9 @@ Program to compute the number of squares in the infinite lattice and value of n 
 For instance: for n = 1 we can see one square, for n
 = 2 we can see 5 squares, and so on.
 */
-
-#include "CompSq.h"
 #include <stdio.h>
-#include "limits.h"
+#include "CompSq.h"
+
 
 /*Function compSquares
 IN: Value of n in the lattice, TYPE: INT
@@ -22,5 +21,5 @@ unsigned long long CompSquares(int n)
         printf("Invalid value of n\n");
         return 0;
     }
-   return (unsigned long long)n * (n + 1)) * (2 * n + 1) / 6; /*Compute the number of squares of different sizes */
+   return (unsigned long long)n * (n + 1) * (2 * n + 1) / 6; /*Compute the number of squares of different sizes */
 }
