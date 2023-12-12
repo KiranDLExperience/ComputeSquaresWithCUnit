@@ -27,7 +27,7 @@ unsigned long long CompSquares(int n)
         totalSq = totalSq + (i * i);  /*Compute the number of squares of different sizes */
         if (totalSq > ULLONG_MAX)   /* This condition ensures that if the no. of squares > size variable can hold, 0 is returned*/
         {
-            totalSq = -1;
+            totalSq = i;
             break;
         }
     }
