@@ -25,7 +25,7 @@ unsigned long long CompSquares(int n)
     for (int i = 1; i <= n; i++) 
     {
         totalSq = totalSq + (i * i);  /*Compute the number of squares of different sizes */
-        if (totalSq > (2^64-1)   /* This condition ensures that if the no. of squares > size variable can hold, 0 is returned*/
+        if (totalSq > (2^64-1))   /* This condition ensures that if the no. of squares > size variable can hold, 0 is returned*/
         {
             printf("n value max is %llu and ULLONG_MAX is %llu\n",i,ULLONG_MAX);
             totalSq = i;
