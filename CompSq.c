@@ -23,8 +23,9 @@ unsigned long long CompSquares(int n)
         return 0;
     }
 
-   /* return (n * (n + 1)) * (2 * n + 1) / 6; *//*Compute the number of squares of different sizes */
-    
+   totalSq =  (n * (n + 1)) * (2 * n + 1) / 6; /*Compute the number of squares of different sizes */
+   printf("Using equation :: %llu\n", totalSq);
+    totalSq = 0;
     for (int i = 1; i <= n; i++) 
     {
         totalSq = totalSq + (i * i);  /*Compute the number of squares of different sizes */
