@@ -16,6 +16,6 @@ jobs:
     - name: install gcc
       run: sudo apt-get install gcc
     - name: make
-      run: 	gcc UnitTestcases.c -L. -l:CompSqLib.a -o runme
+      run: make makeexe
     - name: make run
-      run: ./runme
+      run: ./runtest
