@@ -22,6 +22,8 @@ unsigned long long CompSquares(int n)
         printf("Invalid value of n\n");
         return 0;
     }
+
+   /* return (n * (n + 1)) * (2 * n + 1) / 6; *//*Compute the number of squares of different sizes */
     
     for (int i = 1; i <= n; i++) 
     {
