@@ -6,6 +6,7 @@ For instance: for n = 1 we can see one square, for n
 */
 
 #include "CompSq.h"
+#include <stdio.h>
 #include "limits.h"
 
 /*Function compSquares
