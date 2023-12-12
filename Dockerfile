@@ -11,7 +11,4 @@ WORKDIR /ContainerApp
 COPY . /ContainerApp/
 
 # Compile the C code
-RUN make makeexe
-
-# Set the command to see if the object file is build
-CMD ["./runtest"]
+RUN make makelib
