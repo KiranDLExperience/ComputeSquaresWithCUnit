@@ -6,6 +6,7 @@ For instance: for n = 1 we can see one square, for n
 */
 
 #include "CompSq.h"
+#include "limits.h"
 
 /*Function compSquares
 IN: Value of n in the lattice, TYPE: INT
@@ -14,5 +15,23 @@ This function computes the number of squares in the nxn lattice
 */
 unsigned long long CompSquares(int n)
 {
-    return (n * (n + 1)) * (2 * n + 1) / 6; /*Compute the number of squares of different sizes */
+    unsigned long long totalSq=0;
+    if(n<0)
+    {
+        printf("Invalid value of n\n");
+        return 0;
+    }
+    
+    for (int i = 1; i <= n; i++) 
+    {
+        totalSq = totalSq + (i * i);  /*Compute the number of squares of different sizes */
+        if (totalSq > ULLONG_MAX)   /* This condition ensures that if the no. of squares > size variable can hold, 0 is returned*/
+        {
+            totalSq = -1;
+            break;
+        }
+    }
+    return totalSq;
+    
+    /*return (n * (n + 1)) * (2 * n + 1) / 6; */
 }
