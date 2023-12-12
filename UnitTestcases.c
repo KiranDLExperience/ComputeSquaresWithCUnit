@@ -35,5 +35,6 @@ int main() {
     testCompSquares(3, 14);
     testCompSquares(4, 30);
     testCompSquares(8888, 456);
+    testCompSquares(99999999, 888888);
     return 0;
 }
