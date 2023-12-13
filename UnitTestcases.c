@@ -15,7 +15,7 @@ IN: Value of n, TYPE: INT
 Expected Result value, TYPE UINT LONG LONG
 OUT: Void - Function only prints the test failed/passed
 */
-void testCompSquares(int n, unsigned long long expResult) 
+void testCompSquares(int n, ULLONG expResult) 
 {
     ULLONG obResult;
     obResult = CompSquares(n);
@@ -35,7 +35,7 @@ int main() {
     testCompSquares(3, 14);
     testCompSquares(4, 30);
     testCompSquares(3810777, 18446735571075162805);
-    tempCompSquares(-1, 0);
-    tempCompSqaures(3880000, 0);
+    testCompSquares(-1, 0);
+    testCompSqaures(3880000, 0);
     return 0;
 }
