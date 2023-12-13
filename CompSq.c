@@ -21,7 +21,7 @@ ULLONG CompSquares(int n)
         printf("Invalid value of n\n");
         return 0;
     }
-    for (i==1;i<=n;i++)
+    for (int i==1;i<=n;i++)
     {
         totalSq = totalSq + ((ULLONG) i * (ULLONG) i);
     }
