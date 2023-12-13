@@ -3,7 +3,9 @@
 # Using unbuntu as the base image
 FROM ubuntu:latest
 
-RUN apt-get install  libcunit1 libcunit1-doc libcunit1-dev
+RUN apt-get update
+
+RUN apt-get install libcunit1
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
