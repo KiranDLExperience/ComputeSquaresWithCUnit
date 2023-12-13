@@ -34,8 +34,8 @@ int main() {
     testCompSquares(2, 5);
     testCompSquares(3, 14);
     testCompSquares(4, 30);
-    //testCompSquares(3810777, 18446735571075162805);
     testCompSquares(-1, 0);
     testCompSquares(3880000, 0);
+    testCompSquares(3810777, 18446735571075162805);
     return 0;
 }
