@@ -17,9 +17,9 @@ ULLONG CompSquares(int n)
 {
     ULLONG totalSq=0;
     int i;
-    if(n<0 || n > MAX_N)
+    if(n<=0 || n > MAX_N)
     {
-        printf("Invalid value of n\n");
+        printf("INVALID Value of n < VALID Range: 1 - %d>\n", MAX_N);
         return 0;
     }
     for(i=1;i<=n;i++)
