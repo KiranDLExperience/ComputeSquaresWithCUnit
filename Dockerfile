@@ -6,7 +6,7 @@ FROM ubuntu:latest
 RUN apt-get update
 RUN apt install make
 RUN apt-get install libcunit1
-RUN apt install build-essential
+RUN apt install gcc
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
