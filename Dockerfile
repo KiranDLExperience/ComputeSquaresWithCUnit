@@ -23,3 +23,4 @@ COPY . /ContainerApp/
 
 # Compile the C code
 RUN make makelib
+RUN ls -al
