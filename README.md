@@ -24,18 +24,17 @@ The Unit Testcase workflow is triggered by an even i.e. completion of the Build 
 # Usage
 To build the Docker image, run the following command:
 
-'''markdown
-'''Bash
-docker build -t myApp:latest .
+    docker build -t computesquares .
 
-Bash
-docker run -it my-app:latest
-Use code with caution. Learn more
-To run the unit tests, run the following command:
+To run the docker image type:
 
-Bash
-make test
-Use code with caution. Learn more
-To run the GitHub Actions workflows, you will need to create a GitHub Actions repository and push the code to your repository. You will also need to create a Docker registry and publish the Docker image to your registry. Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
+    docker run computesquares
+
+To run the CUnit tests, run the following command:
+
+    make makeunittestsuite
+    ./runtest
+
+To run the GitHub Actions workflows, you need to create a GitHub Actions repository and push the code to your repository. You will also need to create a Docker registry and publish the Docker image to your registry. Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
 
 I hope this helps!
