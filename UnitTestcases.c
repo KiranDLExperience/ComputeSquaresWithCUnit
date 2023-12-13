@@ -36,6 +36,8 @@ int main() {
     testCompSquares(4, 30);
     testCompSquares(-1, 0);
     testCompSquares(3880000, 0);
+    testCompSquares(3810778, 0);
     testCompSquares(3810777, 18446735571075162805);
+    testCompSquares(3810776, ((3810776)*(3810776+1)*(3810776*2+1)/6));
     return 0;
 }
