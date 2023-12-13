@@ -9,7 +9,7 @@ $(OBJ): $(SRC) $(HEADERS)
 makelib: clean $(OBJ)
 	ar -rcs CompSqLib.a CompSq.o
 
-makeexe: makelib
+makeunittestsuite: makelib
 	$(CC) UnitTestcases.c -L. -l:CompSqLib.a -o runtest
 clean:
 	rm -rf *.o *.a
