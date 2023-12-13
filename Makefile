@@ -1,5 +1,5 @@
 CC= gcc
-FLAGS = -W -e 
+FLAGS = -w 
 SRC = ./src/*.c
 HEADERS = ./header/*.h
 OBJ = $(SRC:.c=.o)
