@@ -3,7 +3,7 @@ This repository is a demonstration of API implementation that computes the no. o
 - Building libraries using Makefile and Dockerfile
 - Unit testcases using CUnit
 - Continous integration using GitHub actions for building libraries and running testcases.
-Multiple functions can be added in the source for building libraries.
+- Multiple functions can be added in the source for building libraries.
 
 ## Folder Structure
 - .github: contains the workflows
