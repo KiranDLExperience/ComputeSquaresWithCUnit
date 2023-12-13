@@ -1,6 +1,8 @@
 # PROJECT DESCRIPTION
 This repository contains a C function which computes the no. of squares for given nxn grid and the corresponding Dockerfile and Makefile.
 It also has two GitHub Actions workflows that automate the build and test of the application.
+Development Environment used VSCode
+TestTool: CUnit
 
 # Makefile
 The Makefile contains the following targets:
