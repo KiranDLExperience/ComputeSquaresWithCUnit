@@ -1,7 +1,7 @@
 CC= gcc
 FLAGS = -W -e 
-SRC = *.c
-HEADERS = *.h
+SRC = ./src/*.c
+HEADERS = ./header/*.h
 OBJ = $(SRC:.c=.o)
 $(OBJ): $(SRC) $(HEADERS)
 	$(CC) -c $(SRC)
