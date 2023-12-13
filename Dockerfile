@@ -1,7 +1,7 @@
 # Dockerfile for Otee Task
 
-# Using C/C++ runtime as the base image
-FROM gcc:latest
+# Using unbuntu as the base image
+FROM ubuntu:latest
 
 RUN sudo apt-get update && apt-get install -y gcc libcunit-dev
 
