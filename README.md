@@ -62,4 +62,9 @@ The output will be shown on terminal with the test suite result showing passed a
 
 To run the Git Hub Actions workflows, you need to clone the repository . Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
 
+You can also run the sample code in the folder samplecode-run to test the usage of libarry function. To do so build the code using libaries using the following command and run the target file:
+
+gcc -c samplecode.c ../src/CompSq.a -o run-sample 
+
+
 Happy Coding!
