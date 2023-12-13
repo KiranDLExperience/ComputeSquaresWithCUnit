@@ -12,6 +12,7 @@ void CompSquaresTest(void)  // run testcases
   CU_ASSERT(CompSquares(3880000) == 0);
   CU_ASSERT(CompSquares(3810777) == 18446735571075162805);
   CU_ASSERT(CompSquares(-1) == 0);
+  CU_ASSERT(CompSquares(1) == 2); // wrong expected value given to check for failure case
 }
 
 int main() 
