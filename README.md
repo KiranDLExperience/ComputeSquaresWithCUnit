@@ -6,8 +6,7 @@ It also has two GitHub Actions workflows that automate the build and test of the
 The Makefile contains the following targets:
 
 - build: Builds the library for the function
-- run: Runs the CUnit executable
-- test: Runs the Cunit tests
+- run: Builds the CUnit executable
 
 # Dockerfile
 The Dockerfile builds a container image that contains the C code with its dependencies. It uses the FROM instruction to base the image on the ubuntu:latest image and then installs the necessary packages for building and running the make. It also adds the C source files and Makefile to the image.
