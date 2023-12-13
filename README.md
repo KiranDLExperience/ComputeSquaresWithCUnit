@@ -66,6 +66,7 @@ You can also run the sample code in the folder samplecode-run to test the usage 
     gcc samplecode.c ../src/CompSq.c -o run-sample
     ./run-sample
 The output of the run-sample will look like:
+
 ![sample-run](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/08605370-8cdc-4ab5-b801-fc2cad0f81b3)
 
 Happy Coding!
