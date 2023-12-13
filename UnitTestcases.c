@@ -12,12 +12,12 @@ void testCompSquares(int n, unsigned long long expResult);
 
 /* Function testCompSquares for unit tests
 IN: Value of n, TYPE: INT
-    Expected Result value, TYPE UINT LONG LONG
+Expected Result value, TYPE UINT LONG LONG
 OUT: Void - Function only prints the test failed/passed
 */
 void testCompSquares(int n, unsigned long long expResult) 
 {
-    unsigned long long obResult;
+    ULLONG obResult;
     obResult = CompSquares(n);
     if (obResult == expResult) 
     {
@@ -34,6 +34,8 @@ int main() {
     testCompSquares(2, 5);
     testCompSquares(3, 14);
     testCompSquares(4, 30);
-    testCompSquares(65535, 287392902673836825);
+    testCompSquares(3810777, 18446735571075162805);
+    tempCompSquares(-1, 0);
+    tempCompSqaures(3880000, 0);
     return 0;
 }
