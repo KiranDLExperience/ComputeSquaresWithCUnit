@@ -25,13 +25,20 @@ The Build workflow is triggered by push events to the main branch.
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
 
 # Usage
+Clone the git repostry in your local machine
+
+    git clone "https://github.com/KiranDLExperience/ComputeSquaresWithCUnit" your-local-path
+  
 To build the Docker image, run the following command:
 
-    docker build -t computesquares .
+    docker build -t your-docker-image .
+Ensure that you have Docker installed and running on your system. Also since the test tool CUnit is ued install the Cunit if not installed on your system
+
+    sudo apt-get install libcunit1 libcunit1-dev
 
 To run the docker image type:
 
-    docker run computesquares
+    docker run your-docker-image
 
 To run the CUnit tests, run the following command:
 
