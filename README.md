@@ -14,8 +14,10 @@ The Dockerfile builds a container image that contains the C code with its depend
 # GitHub Actions Workflows
 There are two GitHub Actions workflows:
 
-- build: This workflow builds the Docker image, runs the makefile and creates the libraries
-- test: This workflow runs the CUnit tests and display the failed/pass testcases statistics
+- ### Build:
+    This workflow builds the Docker image, runs the makefile and creates the libraries
+- ### Unit testcase:
+    This workflow runs the CUnit tests and display the failed/pass testcases statistics
 
 The Build workflow is triggered by push events to the main branch. 
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
