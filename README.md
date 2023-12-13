@@ -5,7 +5,7 @@ Files include:
 Makefile for creating the object file for the function
 Dockerfile
 Source and header files
-UnitTestcase.c file
+CUnitTest.c file
 
 There are two workflows defined -
 Build and Run Testcases.
