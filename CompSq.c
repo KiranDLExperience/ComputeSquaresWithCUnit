@@ -16,14 +16,15 @@ This function computes the number of squares in the nxn lattice
 ULLONG CompSquares(int n)
 {
     ULLONG totalSq=0;
+    int i;
     if(n<0 || n > MAX_N)
     {
         printf("Invalid value of n\n");
         return 0;
     }
-    for (int i==1;i<=n;i++)
+    for(i=1;i<=n;i++)
     {
-        totalSq = totalSq + ((ULLONG) i * (ULLONG) i);
+        totalSq = totalSq + ((ULLONG)i * (ULLONG)i); //compute the square using 1^2+2^2+...+n^2
     }
     return totalSq;
 }
