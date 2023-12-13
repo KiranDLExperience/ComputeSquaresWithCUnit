@@ -5,7 +5,7 @@ FROM gcc:latest
 
 RUN sudo apt-get update
 
-RUN apt-get update && apt-get install -y gcc libcunit-dev
+RUN sudo apt-get update && apt-get install -y gcc libcunit-dev
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
