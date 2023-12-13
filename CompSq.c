@@ -13,13 +13,17 @@ IN: Value of n in the lattice, TYPE: INT
 OUT: No. of squares in the lattice with nxn, TYPE: UNSIGNED LONG LONG
 This function computes the number of squares in the nxn lattice 
 */
-unsigned long long CompSquares(int n)
+ULLONG CompSquares(int n)
 {
-    unsigned long long totalSq=0;
-    if(n<0)
+    ULLONG totalSq=0;
+    if(n<0 || n > MAX_N)
     {
         printf("Invalid value of n\n");
         return 0;
     }
-   return (unsigned long long)n * (n + 1) * (2 * n + 1) / 6; /*Compute the number of squares of different sizes */
+    for (i==1;i<=n;i++)
+    {
+        totalSq = totalSq + ((ULLONG) i * (ULLONG) i);
+    }
+    return totalSq;
 }
