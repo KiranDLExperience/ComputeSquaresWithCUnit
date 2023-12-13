@@ -3,14 +3,14 @@
 # Using unbuntu as the base image
 FROM ubuntu:latest
 
-RUN apt-get update
+RUN apt-get update && apt-get install -y gcc libcunit-dev
 #RUN add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
 #RUN apt update
-RUN apt-get install -y gcc
+#RUN apt-get install -y gcc
 
 
 RUN apt install make
-RUN apt-get install libcunit1
+#RUN apt-get install libcunit1
 
 
 
