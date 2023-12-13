@@ -6,7 +6,7 @@ For instance: for n = 1 we can see one square, for n
 */
 
 #include <stdio.h>
-#include "CompSq.h"
+#include "./header/CompSq.h"
 
 void testCompSquares(int n, ULLONG expResult); 
 
