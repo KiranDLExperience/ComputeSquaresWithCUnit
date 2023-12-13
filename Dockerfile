@@ -3,6 +3,8 @@
 # Using C/C++ runtime as the base image
 FROM gcc:latest
 
+RUN apt-get update && apt-get install -y gcc libcunit-dev
+
 # Set the working directory inside the container
 WORKDIR /ContainerApp
 

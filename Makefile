@@ -10,6 +10,6 @@ makelib: clean $(OBJ)
 	ar -rcs CompSqLib.a CompSq.o
 
 makeunittestsuite: makelib
-	$(CC) UnitTestcases.c -L. -l:CompSqLib.a -o runtest
+	$(CC) CUnitTest.c -L. -l:CompSqLib.a -o runtest -lcunit
 clean:
 	rm -rf *.o *.a
