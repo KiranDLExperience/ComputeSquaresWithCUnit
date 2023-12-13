@@ -1,9 +1,11 @@
 # Dockerfile for Otee Task
 
-# Using C/C++ runtime as the base image
-FROM gcc:latest
+# Using unbuntu as the base image
+FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y gcc libcunit-dev
+RUN apt-get update && apt-get install -y gcc libcunit1 libcunit1-dev
+
+RUN apt install make
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
@@ -14,3 +16,6 @@ COPY . /ContainerApp/
 
 # Compile the C code
 RUN make makelib
+RUN ls -al
+RUN make makeunittestsuite
+RUN ls -al
