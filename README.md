@@ -38,6 +38,6 @@ To run the CUnit tests, run the following command:
     make makeunittestsuite
     ./runtest
 
-To run the GitHub Actions workflows, you need to create a GitHub Actions repository and push the code to your repository. You will also need to create a Docker registry and publish the Docker image to your registry. Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
+To run the GitHub Actions workflows, you need to clone the repository . Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
 
 Happy Coding!
