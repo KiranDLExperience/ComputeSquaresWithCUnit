@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Git/KKCode/ComputeSqCUnit",
-      "program": "d:/Git/KKCode/ComputeSqCUnit/build/Debug/outDebug",
+      "cwd": "d:/Git/KKCode/ComputeSqCUnit/samplecode-run",
+      "program": "d:/Git/KKCode/ComputeSqCUnit/samplecode-run/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
