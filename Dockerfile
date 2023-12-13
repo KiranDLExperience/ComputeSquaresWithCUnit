@@ -6,7 +6,7 @@ FROM ubuntu:latest
 RUN apt-get update
 RUN apt install make
 RUN apt-get install libcunit1
-RUN apt install gcc
+RUN apt install gcc-12 g++-12 gcc-13 g++-13 -y
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
