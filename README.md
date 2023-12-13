@@ -46,7 +46,6 @@ To run the docker image type:
 The output terminal after docker run command will show:
 
 ![run-docker](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/33013d48-bcf5-4cd1-99e5-ac98cd3018b9)
-
 To run the CUnit tests, run the following command:
 
     make makeunittestsuite
@@ -64,8 +63,9 @@ To run the Git Hub Actions workflows, you need to clone the repository . Once yo
 
 You can also run the sample code in the folder samplecode-run to test the usage of libarry function. To do so build the code using libaries using the following command and run the target file:
 
-    gcc samplecode.c ..\src\CompSq.c -o run-sample
+    gcc samplecode.c ../src/CompSq.c -o run-sample
     ./run-sample
-
+The output of the run-sample will look like:
+![sample-run](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/08605370-8cdc-4ab5-b801-fc2cad0f81b3)
 
 Happy Coding!
