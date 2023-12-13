@@ -4,8 +4,11 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get upgrade
-RUN apt install build-essential
+#RUN add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
+#RUN apt update
+RUN apt install gcc
+
+
 RUN apt install make
 RUN apt-get install libcunit1
 
