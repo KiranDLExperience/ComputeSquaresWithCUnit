@@ -3,7 +3,7 @@
 # Using unbuntu as the base image
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y gcc libcunit-dev
+RUN apt-get install -y libcunit-dev
 
 # Set the working directory inside the container
 WORKDIR /ContainerApp
