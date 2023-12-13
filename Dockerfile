@@ -4,8 +4,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update
+RUN apt-get upgrade
 RUN apt install build-essential
-RUN apt install gcc-12 g++-12 -y
 RUN apt install make
 RUN apt-get install libcunit1
 
