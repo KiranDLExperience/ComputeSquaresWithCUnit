@@ -32,19 +32,34 @@ Clone the git repostry in your local machine. Go to the folder where you want to
 To build the Docker image, run the following command:
 
     docker build -t your-docker-image .
-Ensure that you have Docker installed and running on your system. Also since the test tool CUnit is ued install the Cunit if not installed on your system
-
+Ensure that you have Docker installed and running on your system. Also since the test tool CUnit is ued install the Cunit if not installed on your system.
     sudo apt-get install libcunit1 libcunit1-dev
+
+The docker build command will show the following output on your terminal:
+
+   ![Docker-Build](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/510744ca-1404-409c-833c-1b2e8a83adf6)
 
 To run the docker image type:
 
     docker run your-docker-image
+    
+The output terminal after docker run command will show:
+
+     ![run-docker](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/33013d48-bcf5-4cd1-99e5-ac98cd3018b9)
 
 To run the CUnit tests, run the following command:
 
     make makeunittestsuite
-    ./runtest
+The output on the terminal for the make command shall look like this:
+    
+    ![make-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/30e18b31-5595-4c10-9e3b-b273dc01b6d7)
 
-To run the GitHub Actions workflows, you need to clone the repository . Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
+Execute the testcase using the command:
+    ./runtest
+The output will be shown on terminal with the test suite result showing passed and failed cases:
+
+    ![run-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/f48543c0-ebfc-4fcb-a019-77158e71b64f)
+
+To run the Git Hub Actions workflows, you need to clone the repository . Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
 
 Happy Coding!
