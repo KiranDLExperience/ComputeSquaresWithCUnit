@@ -37,8 +37,11 @@ There are two GitHub Actions workflows:
 
 - ### Build:
     This workflow builds the Docker image, runs the makefile and creates the libraries
+  The output after running Build workflow will look like:
+  
 - ### Unit testcase:
     This workflow runs the CUnit tests and display the failed/pass testcases statistics
+ The output after running Unit testcase workflow will look like:
 
 The Build workflow is triggered by push events to the main branch. 
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
