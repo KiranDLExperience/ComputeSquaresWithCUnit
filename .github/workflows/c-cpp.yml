@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: install cunit
+      run: sudo apt-get update
+    - name: install gcc
+      run: sudo apt-get install -y gcc libcunit1 libcunit1-dev
     - name: install gcc
       run: sudo apt-get install gcc
     - name: make test suite
