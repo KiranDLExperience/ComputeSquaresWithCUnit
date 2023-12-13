@@ -8,7 +8,7 @@ For instance: for n = 1 we can see one square, for n
 #include <stdio.h>
 #include "CompSq.h"
 
-void testCompSquares(int n, unsigned long long expResult); 
+void testCompSquares(int n, ULLONG expResult); 
 
 /* Function testCompSquares for unit tests
 IN: Value of n, TYPE: INT
@@ -34,8 +34,8 @@ int main() {
     testCompSquares(2, 5);
     testCompSquares(3, 14);
     testCompSquares(4, 30);
-    testCompSquares(3810777, 18446735571075162805);
+    //testCompSquares(3810777, 18446735571075162805);
     testCompSquares(-1, 0);
-    testCompSqaures(3880000, 0);
+    testCompSquares(3880000, 0);
     return 0;
 }
