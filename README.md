@@ -45,20 +45,20 @@ To run the docker image type:
     
 The output terminal after docker run command will show:
 
-     ![run-docker](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/33013d48-bcf5-4cd1-99e5-ac98cd3018b9)
+![run-docker](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/33013d48-bcf5-4cd1-99e5-ac98cd3018b9)
 
 To run the CUnit tests, run the following command:
 
     make makeunittestsuite
 The output on the terminal for the make command shall look like this:
     
-    ![make-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/30e18b31-5595-4c10-9e3b-b273dc01b6d7)
+![make-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/30e18b31-5595-4c10-9e3b-b273dc01b6d7)
 
 Execute the testcase using the command:
     ./runtest
 The output will be shown on terminal with the test suite result showing passed and failed cases:
 
-    ![run-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/f48543c0-ebfc-4fcb-a019-77158e71b64f)
+![run-test](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/f48543c0-ebfc-4fcb-a019-77158e71b64f)
 
 To run the Git Hub Actions workflows, you need to clone the repository . Once you have done this, you can trigger the workflows by pushing events to your repository or manually triggering the workflows.
 
