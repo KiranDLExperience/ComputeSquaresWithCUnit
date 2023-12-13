@@ -1,8 +1,27 @@
 # PROJECT DESCRIPTION
-This repository contains a C function which computes the no. of squares for given nxn grid and the corresponding Dockerfile and Makefile.
-It also has two GitHub Actions workflows that automate the build and test of the application.
-Development Environment used VSCode
-TestTool: CUnit
+This repository is a demonstration of API implementation that computes the no. of squares for given nxn grid. In addition it also demonstrats the following:
+- Building libraries using Makefile and Dockerfile
+- Unit testcases using CUnit
+- Continous integration using GitHub actions for building libraries and running testcases
+  Multiple functions can be added in the source for building libraries.
+
+## Folder Structure
+- .github: contains the workflows
+- header: contains the CompSq.h header file
+- src: Contains the CompSq.c source file
+- samplecode-run: contains the sample-code.c for testing the function
+- CUnitTest.c: Unit test case file
+- .gitignore: files to ignore for push/pull
+- Dockerfile: Dockerfile
+- Makefile: makefile
+- Readme.md: Description of project
+
+# Keywords
+- Docker
+- Makefile
+- GitHub Workflows
+- CI
+- CUnit unit testcase
 
 # Makefile
 The Makefile contains the following targets:
@@ -24,6 +43,11 @@ There are two GitHub Actions workflows:
 The Build workflow is triggered by push events to the main branch. 
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
 
+# Pre-requisites
+You need to have the following installations on your system:
+- Docker
+- CUnit
+- gcc compiler
 # Usage
 Clone the git repostry in your local machine. Go to the folder where you want to clone the respository and run the command:
 
