@@ -25,9 +25,9 @@ The Build workflow is triggered by push events to the main branch.
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
 
 # Usage
-Clone the git repostry in your local machine
+Clone the git repostry in your local machine. Go to the folder where you want to clone the respository and run the command:
 
-    git clone "https://github.com/KiranDLExperience/ComputeSquaresWithCUnit" your-local-path
+    git clone "https://github.com/KiranDLExperience/ComputeSquaresWithCUnit"
   
 To build the Docker image, run the following command:
 
