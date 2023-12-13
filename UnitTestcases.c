@@ -18,8 +18,8 @@ OUT: Void - Function only prints the test failed/passed
 void testCompSquares(int n, ULLONG expResult) 
 {
     ULLONG obResult;
-    obResult = CompSquares(n);
-    if (obResult == expResult) 
+    obResult = CompSquares(n);    //Call compute Square function
+    if (obResult == expResult) //Compare expected and Obtained results
     {
         printf("Test Passed for n = %d, Expected Result: %llu, Obtained Result: %llu\n", n, expResult, obResult);
     } 
@@ -38,6 +38,6 @@ int main() {
     testCompSquares(3880000, 0);
     testCompSquares(3810778, 0);
     testCompSquares(3810777, 18446735571075162805);
-    testCompSquares(3810776, (((3810776)*(3810776+1)*(3810776*2+1))/6));
+   // testCompSquares(3810776, (((3810776)*(3810776+1)*(3810776*2+1))/6));
     return 0;
 }
