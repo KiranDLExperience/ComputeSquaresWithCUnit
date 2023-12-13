@@ -4,7 +4,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-
+RUN apt install make
 RUN apt-get install libcunit1
 
 # Set the working directory inside the container
