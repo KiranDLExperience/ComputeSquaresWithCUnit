@@ -4,8 +4,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-#RUN add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
-#RUN apt update
+RUN add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
+RUN apt update
 RUN apt install gcc
 
 
