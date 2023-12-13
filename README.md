@@ -42,9 +42,10 @@ There are two GitHub Actions workflows:
 - ### Unit testcase:
     This workflow runs the CUnit tests and display the failed/pass testcases statistics
  The output after running Unit testcase workflow will look like:
-
+![Unit-Testcase-Run](https://github.com/KiranDLExperience/ComputeSquaresWithCUnit/assets/86914350/ddbce834-af00-4b03-86ea-9e1fa9275506)
 The Build workflow is triggered by push events to the main branch. 
 The Unit Testcase workflow is triggered by an even i.e. completion of the Build workflow
+
 
 # Pre-requisites
 You need to have the following installations on your system:
